@@ -1,0 +1,108 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+.content{
+    /* margin-top:40px;  */
+    /* margin-bottom: 56px; */
+    /* position: relative; */
+    position: absolute;
+    top: 40px;
+    bottom: 56px;
+    left: 0px;
+    right: 0px;
+}
+.content .page{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.nav-box{
+    /* position: absolute; */
+    /* top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; */
+    /* z-index: -1; */
+}
+.nav-box .search{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #dddddd;
+    height: 40px;
+    /* 弹性盒子 */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.nav-box .search > i{
+    font-size: 26px;
+    line-height: 40px;
+    flex-grow: 1;
+    text-align: center;
+}
+.nav-box .search > span{
+    font-size: 16px;
+    line-height: 40px;
+    flex-grow: 1;
+    text-align: center;
+}
+.nav-box .search > .user-input{
+    flex-grow: 5;
+    /* height: 26px;
+    line-height: 40px; */
+    margin: 7px 0px;
+    /* font-size: 22px; */
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+.nav-box .search > .user-input:hover{
+    outline:none;
+    border: 1px solid #f9446b;
+    box-sizing: border-box;
+}
+.search-content{
+    z-index: 10;
+    /* display: none; */
+    position: absolute;
+    top:40px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #f9446b;
+}
+
+
+.bottom-box{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    /* 简写方式 */
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 56px;
+    background-color: #dddddd;
+}
+.bottom-box>.bottom-item{
+    height: 100%;
+    flex-grow: 1;
+    text-align: center;
+}
+.bottom-box>.bottom-item>i{
+    font-size: 26px;
+    margin-top: 4px;
+    display: block;
+}
+.bottom-box>.bottom-item>span{
+    display: block;
+    font-size: 12px;
+    margin: 4px 0px;
+}
